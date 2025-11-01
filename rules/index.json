@@ -1,0 +1,14 @@
+{
+    "/api/providers": {
+      "csurf": {
+        "methodsToProtect": ["GET"]
+      }
+    },
+    "/api/trips": {
+      "csurf": {
+        "methodsToProtect": ["GET"]
+      }
+    }
+  }
+  
+  
