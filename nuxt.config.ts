@@ -6,4 +6,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "nuxt-csurf"],
   routeRules: routeRules as any,
+  runtimeConfig: {
+    public: {
+      BASE_API_URL: process.env.BASE_API_URL,
+    },
+    private: {
+      API_KEY: process.env.API_KEY,
+    }
+  }
 });
